@@ -48,12 +48,11 @@ public class Polynomial {
 	private void addPoly(Polynomial p1, Polynomial p2){
 		int lenP1 = p1.expo.length;
 		int lenP2 = p2.expo.length;
-		int i,temp; 
+		int i; 
 		
 		degree = Math.max(lenP1-1, lenP2-1);
 		coeff = new int[degree+1];
 		expo = new int[degree+1];
-		temp=degree;
 		
 		for(i=degree;i>=0;i--){
 			expo[degree-i]=i;
